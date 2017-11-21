@@ -25,6 +25,10 @@ public class Datos {
         databaseReference.child(bd).child(p.getId()).setValue(p);
     }
 
+    public static void guardarPlato(Plato p){
+        databaseReference.child(bd).child(p.getId()).setValue(p);
+    }
+
     public static ArrayList<Restaurante> obtenerPersonas(){
         return restaurantes;
     }
@@ -40,8 +44,14 @@ public class Datos {
     public static void actualizar(Restaurante p){
         databaseReference.child(bd).child(p.getId()).setValue(p);
     }
+    public static void actualizarPlato(Plato p){
+        databaseReference.child(bd).child(p.getId()).setValue(p);
+    }
 
     public static void eliminar(Restaurante p){
+        databaseReference.child(bd).child(p.getId()).removeValue();
+    }
+    public static void eliminarPlato(Plato p){
         databaseReference.child(bd).child(p.getId()).removeValue();
     }
 }

@@ -1,6 +1,7 @@
 package com.example.santiago.eatfast;
 
 
+import java.util.ArrayList;
 
 /**
  * Created by android on 17/10/2017.
@@ -14,6 +15,7 @@ public class Restaurante {
     private String correo;
     private int sexo;
     private String contrasena;
+   // private ArrayList <Str>
 
     public Restaurante(){
 
