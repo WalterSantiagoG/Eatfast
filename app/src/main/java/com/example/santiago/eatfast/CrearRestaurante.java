@@ -24,6 +24,7 @@ public class CrearRestaurante extends AppCompatActivity {
     private EditText txtCedula;
     private EditText txtNombre;
     private EditText txtApellido;
+    private EditText txtContrasena;
     private ArrayList<Integer>fotos;
     private Resources res;
     private Uri uri;
@@ -39,6 +40,8 @@ public class CrearRestaurante extends AppCompatActivity {
         txtCedula = (EditText)findViewById(R.id.txtCedula);
         txtNombre = (EditText)findViewById(R.id.txtNombre);
         txtApellido = (EditText)findViewById(R.id.txtApellido);
+        txtContrasena = (EditText)findViewById(R.id.txtContrasena);
+
 
         res =this.getResources();
 
@@ -59,6 +62,7 @@ public class CrearRestaurante extends AppCompatActivity {
         if (Metodos.validar_aux(txtCedula,aux))return false;
         else if (Metodos.validar_aux(txtNombre,aux))return false;
         else if (Metodos.validar_aux(txtApellido,aux))return false;
+        else if (Metodos.validar_aux(txtContrasena,aux))return false;
         return true;
     }
 
@@ -70,7 +74,8 @@ public class CrearRestaurante extends AppCompatActivity {
             Restaurante p = new Restaurante(id,foto,
                     txtCedula.getText().toString(),
                     txtNombre.getText().toString(),
-                    txtApellido.getText().toString());
+                    txtApellido.getText().toString(),
+                    txtContrasena.getText().toString());
 
             p.guardar();
             subir_foto(foto);
@@ -94,6 +99,7 @@ public class CrearRestaurante extends AppCompatActivity {
         txtCedula.setText("");
         txtNombre.setText("");
         txtApellido.setText("");
+        txtContrasena.setText("");
         txtCedula.requestFocus();
         foto.setImageDrawable(ResourcesCompat.getDrawable(res,android.R.drawable.ic_menu_gallery,null));
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);

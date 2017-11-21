@@ -35,7 +35,7 @@
             android:id="@+id/txtCedula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/cedula"
+            android:hint="@string/nit"
             android:inputType="number" />
     </android.support.design.widget.TextInputLayout>
 
@@ -47,7 +47,7 @@
             android:id="@+id/txtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nombre" />
+            android:hint="@string/nombre_restaurante" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -58,8 +58,21 @@
             android:id="@+id/txtApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/apellido" />
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress" />
 
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <EditText
+            android:id="@+id/txtContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
 
     <LinearLayout

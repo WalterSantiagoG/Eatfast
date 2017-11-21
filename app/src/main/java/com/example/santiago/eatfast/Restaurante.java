@@ -9,20 +9,21 @@ package com.example.santiago.eatfast;
 public class Restaurante {
     private String id;
     private String foto;
-    private String cedula;
+    private String nit;
     private String nombre;
-    private String apellido;
+    private String correo;
     private int sexo;
+    private String contrasena;
 
     public Restaurante(){
 
     }
 
-    public Restaurante(String foto, String cedula, String nombre, String apellido, int sexo) {
+    public Restaurante(String foto, String nit, String nombre, String correo, int sexo) {
         this.foto = foto;
-        this.cedula = cedula;
+        this.nit = nit;
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.correo = correo;
         this.sexo = sexo;
     }
 
@@ -34,19 +35,28 @@ public class Restaurante {
         this.id = id;
     }
 
-    public Restaurante(String foto, String cedula, String nombre, String apellido) {
+    public Restaurante(String foto, String nit, String nombre, String correo) {
         this.foto = foto;
-        this.cedula = cedula;
+        this.nit = nit;
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.correo = correo;
     }
 
-    public Restaurante(String id, String foto, String cedula, String nombre, String apellido) {
+    public Restaurante(String id, String foto, String nit, String nombre, String correo,String contrasena) {
         this.id = id;
         this.foto = foto;
-        this.cedula = cedula;
+        this.nit = nit;
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.correo = correo;
+        this.contrasena=contrasena;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public Restaurante (String id){
@@ -61,12 +71,12 @@ public class Restaurante {
         this.foto = foto;
     }
 
-    public String getCedula() {
-        return cedula;
+    public String getNit() {
+        return nit;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setNit(String cedula) {
+        this.nit = cedula;
     }
 
     public String getNombre() {
@@ -77,12 +87,12 @@ public class Restaurante {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public int getSexo() {

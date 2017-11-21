@@ -8,7 +8,7 @@
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="mensaje_error_vacio">Digite la información faltante</string>
-    <string name="mensaje_persona_guardada">Persona guardada exitosamente!</string>
+    <string name="mensaje_persona_guardada">Restaurante guardada exitosamente!</string>
     <string name="mensaje_seleccion_imagen">seleccione la imagen</string>
     <string name="modificar">Modificar</string>
     <string name="eliminar">Eliminar</string>
@@ -26,4 +26,7 @@
     <string name="contrasena">Contraseña</string>
     <string name="registrarse">Registrarse</string>
     <string name="title_activity_crear_restautantes">CrearRestautantes</string>
+    <string name="nit">Nit</string>
+    <string name="nombre_restaurante">Nombre restaurante</string>
+
 </resources>
