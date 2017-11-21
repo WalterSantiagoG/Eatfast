@@ -65,7 +65,7 @@ public class CrearPlatos extends AppCompatActivity {
 
             String id = Datos.getId();
             String foto = id+".jpg";
-            Plato p = new Plato(id,"114065564",txtNombrePlato.getText().toString(),txtIngredientes.getText().toString(),Double.parseDouble(txtPrecio.getText().toString()));
+            Plato p = new Plato(id,"114065564",txtNombrePlato.getText().toString(),txtIngredientes.getText().toString(),Double.parseDouble(txtPrecio.getText().toString()),foto);
 
             p.guardar();
             subir_foto(foto);

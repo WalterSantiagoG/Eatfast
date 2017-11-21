@@ -21,7 +21,7 @@ public class Datos {
     private static String bd1= "Platos";
 
     private static ArrayList<Restaurante> restaurantes = new ArrayList<>();
-    private static ArrayList<Restaurante> platos = new ArrayList<>();
+    private static ArrayList<Plato> platos = new ArrayList<>();
 
     public static void guardarPersona(Restaurante p){
         databaseReference.child(bd).child(p.getId()).setValue(p);
@@ -38,6 +38,9 @@ public class Datos {
 
     public static void setPersonas(ArrayList<Restaurante>per){
         restaurantes=per;
+    }
+    public static void setPlatos(ArrayList<Plato>pla){
+        platos=pla;
     }
 
     public static String getId(){

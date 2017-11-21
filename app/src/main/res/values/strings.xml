@@ -32,5 +32,7 @@
     <string name="nombrePlato">Nombre del plato</string>
     <string name="precio">Precio</string>
     <string name="ingredientes">Ingredientes</string>
+    <string name="title_activity_principal_usuarios">PrincipalUsuarios</string>
+    <string name="title_activity_listar_platos">listarPlatos</string>
 
 </resources>

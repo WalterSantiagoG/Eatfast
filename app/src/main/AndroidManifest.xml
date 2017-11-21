@@ -13,14 +13,25 @@
             android:name=".Principal"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".CrearRestaurante" />
-        <activity android:name=".CrearPlatos"></activity>
+        <activity android:name=".CrearPlatos" />
+        <activity
+            android:name=".PrincipalUsuarios"
+            android:label="@string/title_activity_principal_usuarios"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".listarPlatos"
+            android:label="@string/title_activity_listar_platos"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
     </application>
 
 </manifest>

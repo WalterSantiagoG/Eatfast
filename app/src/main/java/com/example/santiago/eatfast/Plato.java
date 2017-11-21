@@ -13,21 +13,32 @@ public class Plato {
     private ArrayList<String> ingredientes= new ArrayList<>();
     private double precio;
     private String idRestaurante;
+    private String foto;
 
-    public Plato(String idPlato,String idRestaurante,String nombre, ArrayList<String> ingredientes, double precio) {
+    public Plato(String idPlato,String idRestaurante,String nombre, ArrayList<String> ingredientes, double precio,String foto) {
         this.nombre = nombre;
         this.ingredientes = ingredientes;
         this.precio = precio;
         this.idRestaurante=idRestaurante;
         this.id=idPlato;
+        this.foto=foto;
     }
 
-    public Plato(String idPlato,String idRestaurante,String nombre, String listaIngredientes, double precio) {
+    public Plato(String idPlato,String idRestaurante,String nombre, String listaIngredientes, double precio,String foto) {
         this.nombre = nombre;
         this.añadirListaDeIngredientes(listaIngredientes);
         this.precio = precio;
         this.idRestaurante=idRestaurante;
         this.id=idPlato;
+        this.foto=foto;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public String getId() {

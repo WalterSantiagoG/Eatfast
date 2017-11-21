@@ -44,6 +44,7 @@ import java.util.ArrayList;
 public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaurante.PersonaViewHolder> {
 
     private ArrayList<Restaurante> personas;
+
     private Resources res;
     private Context contexto;
     private OnPersonaClickListener clickListener;
@@ -55,11 +56,14 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
         this.clickListener=clickListener;
     }
 
+
+
     @Override
     public PersonaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_persona,parent,false);
         return new PersonaViewHolder(v);
     }
+
 
     @Override
     public void onBindViewHolder(final PersonaViewHolder holder, int position) {
