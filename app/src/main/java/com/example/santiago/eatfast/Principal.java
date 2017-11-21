@@ -79,15 +79,15 @@ public class Principal extends AppCompatActivity implements AdaptadorRestaurante
 
     @Override
     public void onPersonaClick(Restaurante p) {
-       /* Intent i = new Intent(Principal.this,ModificarPersona.class);
+        Intent i = new Intent(Principal.this,CrearPlatos.class);
         Bundle b = new Bundle();
-        b.putString("id",p.getId());
+        /*b.putString("id",p.getId());
         b.putString("cedula",p.getCedula());
         b.putString("nombre",p.getNombre());
         b.putString("apellido",p.getApellido());
         b.putString("foto",p.getFoto());
 
-        i.putExtra("datos",b);
-        startActivity(i);*/
+        i.putExtra("datos",b);*/
+        startActivity(i);
     }
 }

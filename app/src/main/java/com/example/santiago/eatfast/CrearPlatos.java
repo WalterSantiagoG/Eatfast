@@ -45,7 +45,7 @@ public class CrearPlatos extends AppCompatActivity {
 
         res =this.getResources();
 
-       // inicializar_fotos();
+        // inicializar_fotos();
         storageReference = FirebaseStorage.getInstance().getReference();
 
     }

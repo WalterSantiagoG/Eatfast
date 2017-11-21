@@ -101,7 +101,7 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             foto = (ImageView)item.findViewById(R.id.imgFoto);
             cedula = (TextView)item.findViewById(R.id.lblCedula);
             nombre = (TextView)item.findViewById(R.id.lblNombre);
-           // apellido = (TextView)item.findViewById(R.id.lblApellido);
+            // apellido = (TextView)item.findViewById(R.id.lblApellido);
         }
     }
 

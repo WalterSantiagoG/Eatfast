@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Plato {
     private String id;
     private String nombre;
-    private ArrayList<String> ingredientes;
+    private ArrayList<String> ingredientes= new ArrayList<>();
     private double precio;
     private String idRestaurante;
 

@@ -18,15 +18,18 @@ public class Datos {
 
     private static DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
     private static String bd = "Restaurantes";
+    private static String bd1= "Platos";
 
     private static ArrayList<Restaurante> restaurantes = new ArrayList<>();
+    private static ArrayList<Restaurante> platos = new ArrayList<>();
 
     public static void guardarPersona(Restaurante p){
         databaseReference.child(bd).child(p.getId()).setValue(p);
     }
 
     public static void guardarPlato(Plato p){
-        databaseReference.child(bd).child(p.getId()).setValue(p);
+
+        databaseReference.child(bd1).child(p.getId()).setValue(p);
     }
 
     public static ArrayList<Restaurante> obtenerPersonas(){
@@ -45,13 +48,13 @@ public class Datos {
         databaseReference.child(bd).child(p.getId()).setValue(p);
     }
     public static void actualizarPlato(Plato p){
-        databaseReference.child(bd).child(p.getId()).setValue(p);
+        databaseReference.child(bd1).child(p.getId()).setValue(p);
     }
 
     public static void eliminar(Restaurante p){
         databaseReference.child(bd).child(p.getId()).removeValue();
     }
     public static void eliminarPlato(Plato p){
-        databaseReference.child(bd).child(p.getId()).removeValue();
+        databaseReference.child(bd1).child(p.getId()).removeValue();
     }
 }
